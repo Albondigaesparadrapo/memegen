@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import json
 
-sublist = [dadjokes,memes,wholesomememes,jokes,ihadastroke]
+sublist = (dadjokes,memes,wholesomememes,jokes,ihadastroke)
 subreddit = st.multiselect("Your subreddit:",sublist)
 if st.button("Generate meme"):
     if subreddit != "":    
