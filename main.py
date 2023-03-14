@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import json
 
-subreddit = st.text_input
+subreddit = st.text_input("Your subreddit:")
 if subreddit != "":    
     if st.button("Generate meme"):
         url = "https://meme-api.com/gimme/"+subreddit
