@@ -11,5 +11,5 @@ if st.button("Generate meme"):
     memeauthor = data["author"]
     st.header(memetitle)
     st.markdown("---")
-    st.subheader(memeauthor)
+    st.subheader("Submitted by",memeauthor)
     st.markdown("![Our meme]("+meme+")")
