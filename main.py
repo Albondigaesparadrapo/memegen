@@ -2,10 +2,10 @@ import streamlit as st
 import requests
 import json
 
-sublist = (dadjokes,memes,wholesomememes,jokes,ihadastroke)
+sublist = (dadjokes,memes,wholesomememes,ihadastroke)
 subreddit = st.multiselect("Your subreddit:",sublist)
 if st.button("Generate meme"):
-    if subreddit != "":    
+    if subreddit != "":
         url = "https://meme-api.com/gimme/"+subreddit
         rspt = requests.get(url)
         data = json.loads(rspt.text)
