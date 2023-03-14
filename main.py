@@ -3,7 +3,7 @@ import requests
 import json
 
 sublist = [dadjokes,memes,wholesomememes,jokes,ihadastroke]
-subreddit = st.multiselect("Your subreddit:")
+subreddit = st.multiselect("Your subreddit:",sublist)
 if st.button("Generate meme"):
     if subreddit != "":    
         url = "https://meme-api.com/gimme/"+subreddit
