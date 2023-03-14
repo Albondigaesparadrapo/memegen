@@ -3,8 +3,8 @@ import requests
 import json
 
 subreddit = st.text_input("Your subreddit:")
-if subreddit != "":    
-    if st.button("Generate meme"):
+if st.button("Generate meme"):
+    if subreddit != "":    
         url = "https://meme-api.com/gimme/"+subreddit
         rspt = requests.get(url)
         data = json.loads(rspt.text)
